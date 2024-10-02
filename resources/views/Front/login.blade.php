@@ -45,7 +45,7 @@
                     fetchpriority="high" />
             </div>
             <div class="col">
-                <div class="d-flex flex-column space-y-2 mb-8">
+                <div class="d-flex flex-column space-y-2 mb-5">
                     <span class="fw-bold text-neutral-900 text-3xl">登入</span>
                     <span class="text-sm text-neutral-900">登入您的帳號</span>
                 </div>

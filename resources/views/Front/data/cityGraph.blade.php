@@ -1,4 +1,4 @@
-@extends("front.app")
+@extends("Front.app")
 @section("title", "Explore")
 @section("content")
 <!-- 地圖 JS -->

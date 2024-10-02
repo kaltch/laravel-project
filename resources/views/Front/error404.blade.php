@@ -1,4 +1,4 @@
-@extends('front.app')
+@extends('Front.app')
 @section('title', 'Error 404')
 @section('content')
 <div class='container'>

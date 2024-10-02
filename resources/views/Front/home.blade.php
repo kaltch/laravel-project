@@ -1,4 +1,4 @@
-@extends('front.app')
+@extends('Front.app')
 @section('title', 'Home')
 @section('content')
 <style>

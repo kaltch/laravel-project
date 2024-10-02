@@ -1,4 +1,4 @@
-@extends('front.app')
+@extends('Front.app')
 @section('title', 'Search Results')
 @section('content')
 <!-- 地圖 JS -->
@@ -35,7 +35,7 @@
                             </div>
                             <div class="fw-bold text-neutral-900 text-base">{{ $data->name }}</div>
                             <div class="text-sm text-muted">{{ $data->bedrooms }} bedrooms • {{ $data->bathrooms_text }} • {{ $data->accommodates }} guests</div>
-                            <div class="fw-bolder text-xl">${{ number_format($data->price, 0) }} <span class="text-sm text-muted">/ 平均每晚</span></div>
+                            <div class="fw-bolder text-xl">${{ ($data->price > 100) ? (number_format($data->price, 0)) : '--' }} <span class="text-sm text-muted">/ 平均每晚</span></div>
                             <div>
                                 <button class="btn btn-primary">查看詳情</button>
                             </div>
@@ -46,7 +46,7 @@
             @endforeach
 
         </div>
-        <div class="col-md-6">
+        <div class="col-md-6 z-1">
             <div class="vh-100" id="map"></div>
         </div>
     </div>
