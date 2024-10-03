@@ -27,7 +27,7 @@ jobs:
     - name: Build and push Docker image
       run: |
         docker build -t ${{ secrets.REGION }}-docker.pkg.dev/${{ secrets.PROJECT_ID }}/laravel-app/laravel-app:latest .
-        docker push ${{ secrets.REGION }}/${{ secrets.PROJECT_ID }}/laravel-app/laravel-app:latest
+        docker push ${{ secrets.REGION }}-docker.pkg.dev/${{ secrets.PROJECT_ID }}/laravel-app/laravel-app:latest
 
     # 部署到 Google Cloud Run
     - name: Deploy to Cloud Run
